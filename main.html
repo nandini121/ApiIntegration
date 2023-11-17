@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+
+  <h2>Login</h2>
+
+  <form id="loginForm">
+    <label for="login_id">Email:</label>
+    <input type="text" id="login_id" name="login_id" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="authenticateUser()">Login</button>
+  </form>
+
+  <script>
+    function authenticateUser() {
+      const loginId = document.getElementById('login_id').value;
+      const password = document.getElementById('password').value;
+
+      // Implement the logic to make the authentication API call here
+      // Use the obtained token for further API calls
+      // You may use the fetch or axios library for making API calls
+
+      // For simplicity, let's show an alert with the entered credentials
+      alert(`Login ID: ${loginId}\nPassword: ${password}`);
+    }
+  </script>
+
+</body>
+</html>
